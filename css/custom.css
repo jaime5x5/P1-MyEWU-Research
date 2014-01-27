@@ -1,3 +1,4 @@
+
 /*************
 ****top nav****
 *************/
@@ -11,7 +12,16 @@
 /*************
 *welcome page*
 *************/
-
+.siteTopper {
+  padding: 30px; 
+  margin-top: -30%; 
+  margin-left: 33%; 
+  position: relative; 
+  min-width: 300px;
+}
+.stripListDecoration {
+  list-style: none;
+}
 
 /*************
 ****Logo****
@@ -98,3 +108,55 @@
 }
 /*********end logo***********/
 
+/*********footer***********/
+footer {
+  display: inline-block;
+  width: 90%;
+  height: 3rem;
+  margin-left: 20%;
+}
+footer ul li {
+  list-style: none;
+  float: left;
+  padding: 20px;
+}
+
+footer ul li:nth-child(1) a:before {
+  content: url("../img/facebook.png");
+}
+footer ul li:nth-child(2) a:before {
+  content: url("../img/twitter.png");
+}
+footer ul li:nth-child(3) a:before {
+  content: url("../img/youtube.png");
+}
+footer ul li:nth-child(4) a:before {
+  content: url("../img/google-plus.png");
+}
+footer ul li:nth-child(5) a:before {
+  content: url("../img/Instagram.png");
+}
+footer ul li:nth-child(6) a:before {
+  content: url("../img/pinterest.png");
+}
+footer ul li:nth-child(7) a:before {
+  content: url("../img/minime.jpg");
+}
+
+
+/*********media breaks***********/
+@media (max-width: 1240px) {
+
+  .logoborder {
+    margin-left: 0;
+  }
+  .siteTopper {
+    padding: 30px; 
+    margin: 0; 
+  }
+  .footer {
+    margin-left: 0;
+    width: 100%;
+  }
+
+}
