@@ -1,4 +1,12 @@
-
+h2 {
+  font-family: "nimbus-sans",sans-serif;
+  }
+h3 {
+  font-family: "franklin-gothic-ext-comp-urw",sans-serif;
+  }
+body {
+  font-family: "museo",serif;
+  }
 /*************
 ****top nav****
 *************/
@@ -30,9 +38,11 @@
 }
 .accordion dd > a {
   background: rgba(185, 16, 16, 0.99);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 .accordion dd > a:hover {
-  background: rgba(185, 16, 16, 0.6);
+  background: rgba(255, 204, 100, 0.9);
 }
 .accordion dd.active a {
 background: rgba(217, 208, 0, 0.2);
@@ -118,6 +128,8 @@ background: rgba(217, 208, 0, 0.2);
 .logo li span {
   color: green;
   -webkit-animation: 5s fadein ease-in-out;
+  font-family: "lobster",serif;
+  text-shadow: #000 1px 1px 1px;
 }
 
 @-webkit-keyframes fadein {
