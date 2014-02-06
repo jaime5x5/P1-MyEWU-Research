@@ -1,12 +1,13 @@
 h2 {
   font-family: "nimbus-sans",sans-serif;
-  }
-h3 {
+  font-weight: bold;
+}
+h3, h4, h5, h6 {
   font-family: "franklin-gothic-ext-comp-urw",sans-serif;
-  }
+}
 body {
   font-family: "museo",serif;
-  }
+}
 /*************
 ****top nav****
 *************/
@@ -36,20 +37,24 @@ body {
 .studentArticle {
   margin: -270px 0 0 340px;
 }
-.accordion dd > a {
-  background: rgba(185, 16, 16, 0.99);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+
+.tabs-content.vertical > .content {
+  margin-left: 3rem;
+  padding: 0 0.9375rem;
 }
-.accordion dd > a:hover {
-  background: rgba(255, 204, 100, 0.9);
+.tabs.vertical dd {
+
 }
-.accordion dd.active a {
-background: rgba(217, 208, 0, 0.2);
-}
-.accordion .content.active {
+.tabs dd > a {
+/*  border-radius: .1rem .2rem 10rem 10rem;
+  border: 1px groove #808080;*/
   display: block;
-  background: rgba(255, 204, 100, 0.9);
+  background: #EFEFEF;
+  color: #222;
+  margin: .2rem 0;
+  font-family: "nimbus-sans",sans-serif;
+  font-size: 1rem;
+  width: 120px;
 }
 
 /*************
@@ -197,3 +202,15 @@ footer ul li:nth-child(7) a:before {
   }
 
 }
+@media only screen and (max-width: 40em) { 
+  .tabs.vertical {
+  float: left;
+  margin-bottom: 1.25rem;
+  width: 120px;
+  }
+  .tabs-content.vertical {
+  float: left;
+  margin-left: -1px;
+  width: 120px;
+  }
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
