@@ -1,13 +1,32 @@
 h2 {
   font-family: "nimbus-sans",sans-serif;
   font-weight: bold;
+  color: #AC1111;
+  text-shadow: 1px 2px 2px #E5CCCC;
 }
 h3, h4, h5, h6 {
   font-family: "franklin-gothic-ext-comp-urw",sans-serif;
+  color: #2A821A;
+  text-shadow: 1px 2px 2px #E4E4E4;
 }
 body {
   font-family: "museo",serif;
 }
+.reveal-modal {
+  background-color: rgba(71, 71, 71, 0.9);
+  color: #FFF;
+  border-radius: 20px;
+}
+.reveal-modal img {
+  box-shadow: 5px 5px 20px #303030;
+  border-radius: 25px;
+  margin-left: 25%;
+}
+.reveal-modal p {
+  margin-top: 15px;
+  margin-left: 25%;
+}
+
 /*************
 ****top nav****
 *************/
@@ -22,9 +41,7 @@ body {
 *welcome page*
 *************/
 .siteTopper {
-  padding: 30px;
-  margin-top: -25%;
-  margin-left: 22.5%;
+  margin-left: 50px;
   position: relative;
   min-width: 300px;
 }
@@ -34,77 +51,75 @@ body {
 /*************
 *students page*
 *************/
-.studentArticle {
+/*.studentArticle {
   margin: -270px 0 0 340px;
-}
+}*/
 
 .tabs-content.vertical > .content {
   margin-left: 3rem;
   padding: 0 0.9375rem;
 }
-.tabs.vertical dd {
-
+.tabs dd.active a {
+  background: #1C23D2;
+  color: #FF0;
+}
+.tabs dd > a:hover {
+  background: #9BC334;
 }
 .tabs dd > a {
-/*  border-radius: .1rem .2rem 10rem 10rem;
-  border: 1px groove #808080;*/
   display: block;
-  background: #EFEFEF;
-  color: #222;
+  background: none;
   margin: .2rem 0;
-  font-family: "nimbus-sans",sans-serif;
   font-size: 1rem;
+  text-shadow: 1px 1px 3px #000;
   width: 120px;
+  font-family: "nimbus-sans",sans-serif;
+  color: #0E5C00;
+  text-shadow: 1px 2px 2px #919191;
 }
 
 /*************
 ****Logo****
 *************/
 .logoborder {
-    width: 300px;
-    height: 250px;
-    margin-top: 20px;
-    margin-left: 2em;
-    position: relative;
-    background-color: rgba(189, 17, 13, 1);
-    border: 25px solid red;
-    border-image: url(https://dl.dropboxusercontent.com/u/87444974/corners.png) 40 40 stretch;
-    box-shadow: 3px 3px 10px #222;
+  width: 320px;
+  height: 550px;
+  margin-top: 20px;
+  margin-left: 1em;
+  position: relative;
+  background-color: rgba(189, 17, 13, 1);
+  border: 25px solid red;
+  border-image: url(https://dl.dropboxusercontent.com/u/87444974/corners.png) 40 40 stretch;
+  box-shadow: 3px 3px 10px #222;
 }
 .logo {
   display: inline-block;
   background-color: rgb(47, 63, 153);
-  width: 250px;
-  height: 200px;
+  height: 500px;
+  width: 245px;
+  box-shadow: inset -1px -1px 3px #FFF, inset 1px 1px 3px #000;
 }
-.left-knob {
-  background-color: #000;
-  border: 2px dotted #FFF;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
+.knob {
+  background-color: #462B2B;
+  border-radius: 30%;
+  height: 28px;
+  width: 70px;
   position: relative;
-  margin: 40px 0 0 45px;
+  margin: -1px 0 0 90px;
+  box-shadow: inset 1px 1px 2px #9A8181;
 }
-.left-knob a, .right-knob a{
+.knob a {
   padding: 0 0 0 8px;
   text-decoration: none;
   color:white;
   font-size: .7em;
 }
-.right-knob {
-  background-color: rgb(0, 0, 0);
-  border: 2px dotted rgb(255, 255,255);
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  position: relative;
-  margin: -50px 0 0 150px;
-}
-
 .logo li{
   text-align: middle ;
   list-style: none;
+}
+.logo p {
+  color: yellow;
 }
 .logo span {
   margin-top: -80px;
@@ -146,7 +161,6 @@ body {
 
 /*********footer***********/
 footer {
-  display: inline-block;
   width: 90%;
   height: 3rem;
   margin-left: 20%;
@@ -156,7 +170,6 @@ footer ul li {
   float: left;
   padding: 20px;
 }
-
 footer ul li:nth-child(1) a:before {
   content: url("../img/facebook.png");
 }
@@ -178,7 +191,108 @@ footer ul li:nth-child(6) a:before {
 footer ul li:nth-child(7) a:before {
   content: url("../img/minime.jpg");
 }
+  /*************
+*students page*
+*************/
+.studentArticle {
+  margin: 0;
+}
+.regtoolStudent {
+  list-style-type: binary;
+  padding: 10px;
+}
+.myStatement {
+  list-style-type: none;
+}
+/*****************LogoHorizontal*****************/
+.logoborderHorizontal {
+  width: 70%;
+  min-width: 320px;
+  height: 300px;
+  margin-top: 1em;
+  position: relative;
+  background-color: #BD110D;
+  border: 25px solid #F00;
+  border-image: url(https://dl.dropboxusercontent.com/u/87444974/corners.png) 40 40 stretch;
+  box-shadow: 3px 3px 10px #222;
+}
+.logoHorizontal {
+  display: inline-block;
+  background-color: #2F3F99;
+  height: 100%;
+  width: 100%;
+  box-shadow: inset -1px -1px 3px #FFF, inset 1px 1px 3px #000;
+}
+.knobHorizontal {
+  background-color: #462B2B;
+  border-radius: 30%;
+  height: 28px;
+  width: 70px;
+  position: relative;
+  text-align: -webkit-center;
+  box-shadow: inset 1px 1px 2px #9A8181;
+  position: relative;
+  padding-top: 5px;
+  margin: 6rem 0 0 17rem;
+}
+.knobHorizontal a {
+  padding: 0 0 0 8px;
+  text-decoration: none;
+  color:white;
+  font-size: .7em;
+}
+.logoHorizontal li{
+  text-align: middle ;
+  list-style: none;
+}
+.logoHorizontal p {
+  color: yellow;
+}
+.logoHorizontal span {
+  margin-top: -80px;
+  margin-left: 20px;
+  font-size: 4em;
+}
+.logoHorizontal li:nth-child(2){
+  margin-top: -10px;
+  margin-left: 50px;
+  font-size: 1.5em;
+  -webkit-animation: 5s fadein ease-in-out infinite alternate;
+}
+.logoHorizontal li:nth-child(3){
+  margin-top: -10px;
+  margin-left: 70px;
+  font-size: .75em;
+  -webkit-animation: 5s fadein ease-in-out infinite alternate;
+}
+.logoHorizontal li:nth-child(4){
+  margin-top: -15px;
+  margin-left: 70px;
+  font-size: 1.2em;
+  -webkit-animation: 5s fadein ease-in-out;
+}
 
+.logoHorizontal li span {
+  color: green;
+  -webkit-animation: 5s fadein ease-in-out;
+  font-family: "lobster",serif;
+  text-shadow: #000 1px 1px 1px;
+}
+.insertVid {
+  float: left;
+  margin: -9rem 0 0 15rem;
+}
+
+@-webkit-keyframes fadein {
+  0% {opacity:0.5; -webkit-transform: scale(1,1)}
+  100% {opacity:1; -webkit-transform: scale(1.2,1)}
+  
+}
+/*********end logoHorizontal***********/
+
+/*********
+end students page
+***********/
 
 /*********media breaks***********/
 @media (max-width: 1240px) {
@@ -194,14 +308,7 @@ footer ul li:nth-child(7) a:before {
     margin-left: 0;
     width: 100%;
   }
-  /*************
-*students page*
-*************/
-  .studentArticle {
-    margin: 0;
-  }
 
-}
 @media only screen and (max-width: 40em) { 
   .tabs.vertical {
   float: left;
